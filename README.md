@@ -50,7 +50,8 @@ If you change the system volume by more than 5 points, the script treats that as
 - **Paused Spotify in dash mode.** When Spotify is paused, its window title is usually just `"Spotify"` or `"Spotify Free"` — no dash present. Dash mode will read that as an ad and duck the volume. Harmless (nothing's playing) but it'll show "Detected" in the status box.
 - **Other windows with dashes.** Dash mode specifically inspects the Spotify process window, not all windows, so unrelated windows (`file.py - VSCode`, browser tabs, etc.) don't interfere.
 - **Detection lag.** The loop runs every ~600 ms, so there can be a fraction of a second between an ad starting and the volume dropping. I tested this at various amounts, and found that this seems to work well.
-- **Resetting the volume.** This is buggy. I've had it work well, but it currently is broken.
+- **Resetting the volume.** This is buggy. I've had it work well, but it sometimes it has broken in the past.
+- **Spotify changing how it displays information and what it displays in the window title will break this.**
 
 ## Requirements
 
