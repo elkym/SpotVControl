@@ -34,7 +34,7 @@ CheckVolumeChange() {
     }
 
     ; Otherwise, large jumps are real manual changes.
-    if (Abs(newVolume - currentVolume) > 5) {
+    if (Abs(newVolume - currentVolume) > 2) {
         manualChangeDetected := true
         manualChangeTime := A_TickCount
         originalVolume := newVolume
