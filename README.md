@@ -1,6 +1,6 @@
 
 
- # Spot4 — Spotify Ad Volume Ducker
+ # SpotV — Spotify Ad Volume Ducker
 
 An AutoHotkey v2 script that automatically lowers system volume during Spotify advertisements and restores it when music resumes.
 
